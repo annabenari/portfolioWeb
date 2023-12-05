@@ -23,15 +23,20 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+   
     align-items: center;
     background-color: #558B6E;
     height: 100%;
     position: fixed;
 }
 
+
+
 .side-bar-list {
     list-style-type: none;
-    margin-bottom: 20px;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 .side-bar button {
@@ -43,6 +48,7 @@ body {
     cursor: pointer;
     width: 100%;
     text-align: left;
+    text-decoration: none;
 }
 
 .main-section {
@@ -87,18 +93,6 @@ body {
     margin-bottom: 30px;
 }
 
-.timeline-date {
-    width: 60px;
-    background-color: #558B6E;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    height: 100%;
-}
-
 .timeline-line {
     flex: 1;
     height: 4px;
@@ -115,6 +109,7 @@ body {
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     list-style: none;
+    position: relative;
 }
 
 @media only screen and (max-width: 767px) {
@@ -126,6 +121,41 @@ body {
     .timeline-line {
         margin: 0 10px;
     }
+
+    .timeline-date-rect {
+        width: 100%;
+    }
+}
+
+.timeline-date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333533;
+    background-color: #EFF1ED;
+    border: 2px solid #558B6E;
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
 }
 
 
+
+.logos i {
+
+    display: flex;
+
+    font-size: 30px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.logos {
+
+    margin-bottom: 20px; 
+    display: flex;
+
+}
